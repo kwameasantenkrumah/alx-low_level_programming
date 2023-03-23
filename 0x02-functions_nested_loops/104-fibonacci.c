@@ -15,7 +15,7 @@ int main(void)
 	unsigned long int cn;
 	unsigned long int ef = 1;
 	unsigned long int ft = 2;
-	unsigned long int 1 = 1000000000;
+	unsigned long int l = 1000000000;
 	unsigned long int ef1;
 	unsigned long int ef2;
 	unsigned long int ft1;
