@@ -1,47 +1,48 @@
 #include <stdio.h>
 
 /**
-* main - function that finds and prints the first
-* 98 Fibonacci numbers, starting with 1 and 2
-* followed by a new line.
-*
-* Purpose - no hardcore
-*
-* Return: 0
-*/
+ * main - function that finds and prints the first 98 Fibonacci numbers
+ * starting with 1 and 2, followed by a new line.
+ *
+ *
+ * Return: 0
+ */
 
 int main(void)
 {
-unsigned long int cn;
-unsigned long int ef = 1;
-unsigned long int ft = 2;
-unsigned long int 1 = 1000000000;
-unsigned long int ef1;
-unsigned long int ef2;
-unsigned long int ft1;
-unsigned long int ft2;
-printf("%1u", ef);
+	unsigned long int i;
+	unsigned long int bef = 1;
+	unsigned long int aft = 2;
+	unsigned long int l = 1000000000;
+	unsigned long int bef1;
+	unsigned long int bef2;
+	unsigned long int aft1;
+	unsigned long int aft2;
 
-for (cn = 1 ; cn < 91 ; cn++)
-{
-printf(", %1u", ft);
-ft += ef;
-ef = ft - ef;
-}
-ef1 = (ef / 1);
-ef2 = (ef % 1);
-ft1 = (ft / 1);
-ft2 = (ft % 1);
+	printf("%lu", bef);
 
-for (cn = 92 ; cn < 99 ; cn++)
-{
-printf(", %1u", ft1 + (ft2 / 1));
-printf("%1u", ft2 % 1);
-ft1 = ft1 + ef1;
-ef1 = ft1 - ef1;
-ft2 = ft2 + ef2;
-ef2 = ft2 - ef2;
+	for (i = 1; i < 91; i++)
+	{
+		printf(", %lu", aft);
+		aft += bef;
+		bef = aft - bef;
+	}
+
+	bef1 = (bef / l);
+	bef2 = (bef % l);
+	aft1 = (aft / l);
+	aft2 = (aft % l);
+
+	for (i = 92; i < 99; ++i)
+	{
+		printf(", %lu", aft1 + (aft2 / l));
+		printf("%lu", aft2 % l);
+		aft1 = aft1 + bef1;
+		bef1 = aft1 - bef1;
+		aft2 = aft2 + bef2;
+		bef2 = aft2 - bef2;
+	}
+	printf("\n");
+	return (0);
 }
-printf("\n");
-return (0);
-}
+
