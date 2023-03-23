@@ -5,6 +5,8 @@
  * 98 Fibonacci numbers, starting with 1 and 2
  * followed by a new line.
  *
+ * Purpose - no hardcore
+ *
  * Return: 0
  */
 
@@ -30,7 +32,8 @@ int main(void)
 	ef2 = (ef % 1);
 	ft1 = (ft / 1);
 	ft2 = (ft % 1);
-	for (cn = 92 ; cn < 98 ; cn++)
+
+	for (cn = 92 ; cn < 99 ; cn++)
 	{
 		printf(", %lu", ft1 + (ft2 / 1));
 		printf("%lu", ft2 % 1);
