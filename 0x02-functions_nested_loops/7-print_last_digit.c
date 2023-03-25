@@ -5,7 +5,7 @@
  *
  * @a: character to be checked
  *
- * Return: k
+ * Return: b
  */
 
 
