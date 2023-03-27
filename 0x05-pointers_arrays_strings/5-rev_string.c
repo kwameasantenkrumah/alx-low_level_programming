@@ -2,7 +2,7 @@
 
 
 /**
- * rev_string - This function that reverses a string. 
+ * rev_string - This function that reverses a string.
  *
  * @s: string parameter input
  *
@@ -11,17 +11,19 @@
 
 void rev_string(char *s)
 {
-	int a, b, c;
-	char d;
+	int a, b;
+	char c;
 
-	for (a = 0; s[a] != '\0'; a++)
+
+	for (a = 0; s[a] != '\0'; ++a)
 		;
 
-	c = a;
-	for (a--, b = 0; b < c / 2; a--, c++)
+	for (b = 0; b < a / 2; ++b)
 	{
-		d = s[b];
-		s[b] = s[a];
-		s[a] = d;
+		c = s[b];
+		s[b] = s[a - 1 - b];
+		s[a - 1 - b] = c;
 	}
+
 }
+
